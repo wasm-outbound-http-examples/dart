@@ -1,0 +1,4 @@
+{
+  "name": "Dart: HTTP request from WASM",
+  "postCreateCommand": "bash .devcontainer/postCreate.sh"
+}
