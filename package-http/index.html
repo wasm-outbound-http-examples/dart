@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTTP request from WASM in Dart using package:http</title>
+  <script type="module">
+    import { instantiate, invoke } from "./main.mjs";
+
+    const module = await WebAssembly.compileStreaming(fetch('main.wasm'));
+    const instance = await instantiate(module);
+    invoke(instance);
+  </script>
+</head>
+
+<body>
+<h2>HTTP Request from inside WASM in Dart using package:http</h2>
+
+<p>This example uses <a href="https://pub.dev/packages/http">packages/http</a>.</p>
+
+<p>See the output in browser developer console.</p>
+
+<p>Actual code:</p>
+<pre>
+
+import 'package:http/http.dart' as http;
+
+final resp = await http.get(Uri.parse('https://httpbin.org/anything'));
+print('body: ${resp.body}');
+
+</pre>
+<section>
+  <h4>Info</h4>
+  <ul>
+    <li><a href="https://github.com/wasm-outbound-http-examples/dart/tree/main/browser-package-http">Demo
+      source code</a></li>
+    <li>Versions used on the moment of build:<small>
+      Dart SDK: <a href="https://github.com/dart-lang/sdk/releases/tag/3.4.0">v3.4.0</a>,
+      package:http: <a href="https://pub.dev/packages/http/versions/1.2.1">v1.2.1</a>.
+    </small></li>
+  </ul>
+</section>
+<footer><small>Created for (wannabe-awesome) <a href="https://github.com/vasilev/HTTP-request-from-inside-WASM">list</a></small></footer>
+</body>
+</html>
