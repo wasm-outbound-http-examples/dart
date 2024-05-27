@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTTP request from WASM in Dart using package:fetch_client</title>
+  <script type="module">
+    import { instantiate, invoke } from "./main.mjs";
+
+    const module = await WebAssembly.compileStreaming(fetch('main.wasm'));
+    const instance = await instantiate(module);
+    invoke(instance);
+  </script>
+</head>
+
+<body>
+<h2>HTTP Request from inside WASM in Dart using package:fetch_client</h2>
+
+<p>This example uses <a href="https://pub.dev/packages/fetch_client">packages/fetch_client</a>.</p>
+
+<p>See the output in browser developer console.</p>
+
+<p>Actual code:</p>
+<pre>
+
+import 'package:fetch_client/fetch_client.dart';
+
+final client = FetchClient(mode: RequestMode.cors);
+final uri = Uri.parse('https://httpbin.org/anything');
+final resp = await client.get(uri);
+
+print('${resp.body}');
+client.close();
+
+</pre>
+<section>
+  <h4>Info</h4>
+  <ul>
+    <li><a href="https://github.com/wasm-outbound-http-examples/dart/tree/main/browser-package-fetch-client">Demo
+      source code</a></li>
+    <li>Versions used on the moment of build:<small>
+      Dart SDK: <a href="https://github.com/dart-lang/sdk/releases/tag/3.4.0">v3.4.0</a>,
+      package:fetch_client: <a href="https://pub.dev/packages/fetch_client/versions/1.1.2">v1.1.2</a>.
+    </small></li>
+  </ul>
+</section>
+<footer><small>Created for (wannabe-awesome) <a href="https://github.com/vasilev/HTTP-request-from-inside-WASM">list</a></small></footer>
+</body>
+</html>
