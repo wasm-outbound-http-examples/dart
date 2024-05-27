@@ -4,7 +4,7 @@
 
 Tested with Dart SDK [v3.4.0](https://github.com/dart-lang/sdk/releases/tag/3.4.0), 
 `packages:web` [v0.5.1](https://pub.dev/packages/web/versions/0.5.1),
-and Chrome browser v124.0.
+Chrome browser v124.0, and Firefox browser v122.0.
 
 ### Preparation
 

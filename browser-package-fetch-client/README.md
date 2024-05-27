@@ -1,9 +1,9 @@
-# Use Dart's package:http to send HTTP(s) requests from inside WASM
+# Use Dart's package:fetch_client to send HTTP(s) requests from inside WASM
 
 ## Instructions for this devcontainer
 
 Tested with Dart SDK [v3.4.0](https://github.com/dart-lang/sdk/releases/tag/3.4.0), 
-`packages:http` [v1.2.1](https://pub.dev/packages/http/versions/1.2.1),
+`packages:fetch_client` [v1.1.2](https://pub.dev/packages/fetch_client/versions/1.1.2),
 Chrome browser v124.0, and Firefox browser v122.0.
 
 ### Preparation
@@ -16,13 +16,13 @@ Chrome browser v124.0, and Firefox browser v122.0.
 1. `cd` into the folder of this example:
 
 ```sh
-cd browser-package-http
+cd browser-package-fetch-client
 ```
 
-2. Install `packages:http`:
+2. Ensure all dependencies are installed:
 
 ```sh
-dart pub add http
+dart pub get
 ```
 
 ### Building
@@ -50,7 +50,7 @@ python3 -m http.server
 Codespace will show you "Open in Browser" button. Just click that button or
 obtain web address from "Forwarded Ports" tab.
 
-2. As `index.html` and a 280k-sized wasm file are loaded into browser, refer to browser developer console
+2. As `index.html` and a 315k-sized wasm file are loaded into browser, refer to browser developer console
    to see the results.
 
 
