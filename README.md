@@ -1,20 +1,112 @@
 # Make HTTP requests from inside WASM in Dart
 
-This devcontainer is configured to provide you a Dart SDK version 3.4.0.
+This devcontainer is configured to provide you a Dart SDK version 3.5.2 and the latest Node.js.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/wasm-outbound-http-examples/dart)
 
-1. Example in `browser-package-http` directory allows you to experiment with browser example (same as demo) using `package:http`.
-   For details, see the [README](browser-package-http/README.md).
-   Also [browser demo](https://wasm-outbound-http-examples.github.io/dart/package-http/) is available.
-2. Example in `browser-package-web` directory allows you to experiment with browser example (same as demo)  using `package:web`.
-   For details, see the [README](browser-package-web/README.md).
-   Also [browser demo](https://wasm-outbound-http-examples.github.io/dart/package-web/) is available.
-3. Example in `browser-package-fetch-api` directory allows you to experiment with browser example (same as demo) using `package:fetch_api`.
-   For details, see the [README](browser-package-fetch-api/README.md).
-   Also [browser demo](https://wasm-outbound-http-examples.github.io/dart/package-fetch-api/) is available.
-4. Example in `browser-package-fetch-client` directory allows you to experiment with browser example (same as demo) using `package:fetch_client`.
-   For details, see the [README](browser-package-fetch-client/README.md).
-   Also [browser demo](https://wasm-outbound-http-examples.github.io/dart/package-fetch-client/) is available.
+<table>
+<tr>
+<th>#</th>
+<th>Example</th>
+<th>Description</th>
+<th>Browser demo</th>
+<th>Node.js / Deno support</th>
+</tr>
+<tr>
+<td>1</td>
+<td>
+
+[package: http](browser-package-http/README.md)
+
+</td>
+<td>
+
+using `package:http`
+
+</td>
+<td>
+
+[Demo](https://wasm-outbound-http-examples.github.io/dart/package-http/)
+
+</td>
+<td> </td>
+</tr>
+<tr>
+<td>2</td>
+<td>
+
+[package: web](browser-package-web/README.md)
+
+</td>
+<td>
+
+using `package:web`
+
+</td>
+<td>
+
+[Demo](https://wasm-outbound-http-examples.github.io/dart/package-web/)
+
+</td>
+<td> </td>
+</tr>
+<tr>
+<td>3</td>
+<td>
+
+[package: fetch_api](browser-and-node-package-fetch-api/README.md)
+
+</td>
+<td>
+
+using `package:fetch_api`
+
+</td>
+<td>
+
+[Demo](https://wasm-outbound-http-examples.github.io/dart/package-fetch-api/)
+
+</td>
+<td> + </td>
+</tr>
+<tr>
+<td>4</td>
+<td>
+
+[package: fetch_client](browser-and-node-package-fetch-client/README.md)
+
+</td>
+<td>
+
+using `package:fetch_client`
+
+</td>
+<td>
+
+[Demo](https://wasm-outbound-http-examples.github.io/dart/package-fetch-client/)
+
+</td>
+<td> + </td>
+</tr>
+<tr>
+<td>5</td>
+<td>
+
+[package: dio](browser-package-dio/README.md)
+
+</td>
+<td>
+
+using `package:dio`
+
+</td>
+<td>
+
+[Demo](https://wasm-outbound-http-examples.github.io/dart/package-dio/)
+
+</td>
+<td> </td>
+</tr>
+</table>
 
 <sub>Created for (wannabe-awesome) [list](https://github.com/vasilev/HTTP-request-from-inside-WASM)</sub>

@@ -1,4 +1,7 @@
 {
   "name": "Dart: HTTP request from WASM",
-  "postCreateCommand": "bash .devcontainer/postCreate.sh"
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {"version":"latest"}
+  }
 }
