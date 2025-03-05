@@ -1,0 +1,19 @@
+name: browser_package_requests
+description: Make HTTP requests from inside WASM in Dart using package:requests.
+version: 1.0.0
+repository: https://github.com/wasm-outbound-http-examples/dart
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  web: ^0.5.1
+  requests:
+    git:
+      url: https://github.com/jossef/requests.git
+      ref: 5.0.0
+
+dev_dependencies:
+  build_runner: ^2.4.8
+  build_web_compilers: ^4.0.9
+  lints: ^4.0.0

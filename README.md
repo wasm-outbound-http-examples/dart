@@ -107,6 +107,25 @@ using `package:dio`
 </td>
 <td> </td>
 </tr>
+<tr>
+<td>6</td>
+<td>
+
+[package: requests](browser-package-requests/README.md)
+
+</td>
+<td>
+
+using `package:requests`
+
+</td>
+<td>
+
+[Demo](https://wasm-outbound-http-examples.github.io/dart/package-requests/)
+
+</td>
+<td> </td>
+</tr>
 </table>
 
 <sub>Created for (wannabe-awesome) [list](https://github.com/vasilev/HTTP-request-from-inside-WASM)</sub>

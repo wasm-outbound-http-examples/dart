@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTTP request from WASM in Dart using package:requests</title>
+  <script type="module">
+    import { instantiate, invoke } from "./main.mjs";
+
+    const module = await WebAssembly.compileStreaming(fetch('main.wasm'));
+    const instance = await instantiate(module);
+    invoke(instance);
+  </script>
+</head>
+
+<body>
+<h2>HTTP Request from inside WASM in Dart using package:requests</h2>
+
+<p>This example uses <a href="https://pub.dev/packages/requests">packages/requests</a>, but its new version 5.0.0 from
+  <a href="https://github.com/jossef/requests/releases/tag/5.0.0">Github repo</a>.</p>
+
+<p>See the output in browser developer console.</p>
+
+<p>Actual code:</p>
+<pre>
+
+import 'package:requests/requests.dart';
+
+void main() async {
+  final resp = await Requests.get('https://httpbin.org/anything');
+  print('body: ${resp.content()}');
+}
+
+</pre>
+<footer><small>Created for (wannabe-awesome) <a href="https://github.com/vasilev/HTTP-request-from-inside-WASM">list</a></small></footer>
+</body>
+</html>
