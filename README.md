@@ -10,7 +10,7 @@ This devcontainer is configured to provide you a Dart SDK version 3.5.2 and the 
 <th>Example</th>
 <th>Description</th>
 <th>Browser demo</th>
-<th>Node.js / Deno support</th>
+<th>Node.js / Deno / Bun support</th>
 </tr>
 <tr>
 <td>1</td>
@@ -125,6 +125,25 @@ using `package:requests`
 
 </td>
 <td> </td>
+</tr>
+<tr>
+<td>7</td>
+<td>
+
+[`fetch()` via `js_interop_unsafe`](browser-and-node-js_interop_unsafe-fetch/README.md)
+
+</td>
+<td>
+
+using raw `fetch()` imported via `js_interop`
+
+</td>
+<td>
+
+[Demo](https://wasm-outbound-http-examples.github.io/dart/js-interop-fetch/)
+
+</td>
+<td> + </td>
 </tr>
 </table>
 
