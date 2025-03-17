@@ -3,7 +3,7 @@
 ## Instructions for this devcontainer
 
 Tested with Dart SDK [v3.5.2](https://github.com/dart-lang/sdk/releases/tag/3.5.2), 
-`packages:requests` [v5.0.0](https://github.com/jossef/requests/releases/tag/5.0.0),
+`package:requests` [v5.0.0](https://github.com/jossef/requests/releases/tag/5.0.0),
 Chrome browser v133.0, and Firefox browser v135.0.
 
 ### Preparation

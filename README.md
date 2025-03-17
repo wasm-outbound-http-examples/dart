@@ -135,12 +135,31 @@ using `package:requests`
 </td>
 <td>
 
-using raw `fetch()` imported via `js_interop`
+using raw `fetch()` invoked via `js_interop_unsafe`
 
 </td>
 <td>
 
-[Demo](https://wasm-outbound-http-examples.github.io/dart/js-interop-fetch/)
+[Demo](https://wasm-outbound-http-examples.github.io/dart/js-interop-unsafe-fetch/)
+
+</td>
+<td> + </td>
+</tr>
+<tr>
+<td>8</td>
+<td>
+
+[`fetch()` via `js_interop` and extension type](browser-and-node-js_interop-extension_type-fetch/README.md)
+
+</td>
+<td>
+
+using raw `fetch()` imported via `js_interop` and extension type
+
+</td>
+<td>
+
+[Demo](https://wasm-outbound-http-examples.github.io/dart/js-interop-extension-type-fetch/)
 
 </td>
 <td> + </td>

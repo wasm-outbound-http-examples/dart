@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTTP request from WASM in Dart using dart.library.js_interop, extension type, and fetch()</title>
+  <script type="module">
+    import { instantiate, invoke } from "./main.mjs";
+
+    const module = await WebAssembly.compileStreaming(fetch('main.wasm'));
+    const instance = await instantiate(module);
+    invoke(instance);
+  </script>
+</head>
+
+<body>
+<h2>HTTP Request from inside WASM in Dart using raw <code>fetch()</code> imported via <code>js_interop</code> using extension types</h2>
+
+<p>This example uses imported via <code>dart:js_interop</code> raw <code>fetch()</code> function, and gets content via extension type.</p>
+
+<p>See the output in browser developer console.</p>
+
+<p>Actual code:</p>
+<pre>
+
+import 'dart:js_interop';
+
+@JS()
+external JSPromise<Response> fetch(JSString resource);
+
+extension type Response(JSObject _) implements JSObject {
+  @JS()
+  external JSPromise<JSString> text();
+}
+
+final Response resp = await fetch('https://httpbin.org/anything'.toJS).toDart;
+final txt = await resp.text().toDart;
+print('body: ${txt}');
+
+</pre>
+<footer><small>Created for (wannabe-awesome) <a href="https://github.com/vasilev/HTTP-request-from-inside-WASM">list</a></small></footer>
+</body>
+</html>
