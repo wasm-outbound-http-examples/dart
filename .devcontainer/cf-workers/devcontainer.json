@@ -1,0 +1,9 @@
+{
+  "image": "ubuntu:noble",
+  "name": "Dart CF Workers: HTTP request from WASM",
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils": {},
+    "ghcr.io/devcontainers/features/node:1": {"version":"latest"}
+  }
+}

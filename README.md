@@ -164,6 +164,25 @@ using raw `fetch()` imported via `js_interop` and extension type
 </td>
 <td> + </td>
 </tr>
+<tr>
+<td>9</td>
+<td>
+
+[cf_workers.dart](cloudflare-workers/README.md)
+
+</td>
+<td>
+
+HTTP request from WASM Cloudflare Worker implemented in Dart
+
+</td>
+<td>
+
+
+
+</td>
+<td> N/A </td>
+</tr>
 </table>
 
 <sub>Created for (wannabe-awesome) [list](https://github.com/vasilev/HTTP-request-from-inside-WASM)</sub>
