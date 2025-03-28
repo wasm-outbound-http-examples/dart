@@ -175,13 +175,16 @@ using raw `fetch()` imported via `js_interop` and extension type
 
 HTTP request from WASM Cloudflare Worker implemented in Dart
 
+Needs alternate devcontainer:
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/wasm-outbound-http-examples/dart?devcontainer_path=.devcontainer%2Fcf-workers%2Fdevcontainer.json)
+
 </td>
 <td>
 
 
 
 </td>
-<td> N/A </td>
+<td> Not applicable </td>
 </tr>
 </table>
 

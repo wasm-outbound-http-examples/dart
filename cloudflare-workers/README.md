@@ -10,6 +10,8 @@ Wrangler [v4.4.1](https://github.com/cloudflare/workers-sdk/tree/wrangler%404.4.
 > Please make sure you started your codespace using alternate devcontainer, `cf-workers`, since Wrangler 
 > [requires](https://github.com/cloudflare/cloudflare-docs/blob/a13b9e1d90c68bb0c65ddccc8daf9528f83aa2c5/src/content/docs/workers/wrangler/install-and-update.mdx?plain=1#L24)
 > glib 2.35+ .
+>
+> [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/wasm-outbound-http-examples/dart?devcontainer_path=.devcontainer%2Fcf-workers%2Fdevcontainer.json)
 
 ### Preparation
 
